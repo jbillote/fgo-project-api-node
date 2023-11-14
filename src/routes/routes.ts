@@ -1,8 +1,8 @@
 import express from "express";
-import testController from "../controllers/testController";
+import servantController from "../controllers/servantController";
 
 const router = express.Router();
 
-router.get('/', testController.helloWorld);
+router.get('/api/fgo/v1/servant', servantController.searchServant);
 
-export = router
+export = router;
