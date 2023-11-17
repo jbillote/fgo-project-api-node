@@ -80,7 +80,6 @@ function processMaterials(data: { [x: string]: any }): Array<MaterialList> {
     for (const k in data) {
         let items: Array<Material> = [];
         data[k]["items"].forEach((o: { [x: string]: any; }) => {
-            console.log(o)
             items.push({
                 id: o["item"]["id"],
                 name: o["item"]["name"],
